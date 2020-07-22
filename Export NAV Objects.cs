@@ -100,50 +100,57 @@ namespace NavToBC
         {
             if (CheckAllFields())
             {
-                timer.Interval = 2000;
-                timer.Tick += timer_Tick;
-                timer.Start();
-                executeCommandBttn.Enabled = false;
-
-                executeStatusLbl.Text = "Running...";
-                try
+                if (File.Exists(finsqlLocationTextbox.Text + @"\finsql.exe"))
                 {
-                    Process p = new Process();
-                    ProcessStartInfo info = new ProcessStartInfo();
-                    info.FileName = "cmd.exe";
-                    info.RedirectStandardInput = true;
-                    info.UseShellExecute = false;
+                    timer.Interval = 2000;
+                    timer.Tick += timer_Tick;
+                    timer.Start();
+                    executeCommandBttn.Enabled = false;
 
-                    p.StartInfo = info;
-                    p.Start();
-
-                    using (StreamWriter sw = p.StandardInput)
+                    executeStatusLbl.Text = "Running...";
+                    try
                     {
-                        if (sw.BaseStream.CanWrite)
+                        Process p = new Process();
+                        ProcessStartInfo info = new ProcessStartInfo();
+                        info.FileName = "cmd.exe";
+                        info.RedirectStandardInput = true;
+                        info.UseShellExecute = false;
+
+                        p.StartInfo = info;
+                        p.Start();
+
+                        using (StreamWriter sw = p.StandardInput)
                         {
-                            sw.WriteLine(String.Format("cd {0}", finsqlLocationTextbox.Text));
-                            sw.WriteLine(finalCommandTextbox.Text);
+                            if (sw.BaseStream.CanWrite)
+                            {
+                                sw.WriteLine(String.Format("cd {0}", finsqlLocationTextbox.Text));
+                                sw.WriteLine(finalCommandTextbox.Text);
+                            }
+                        }
+
+                        //NAV creates an error log too late for the latter code to catch it so we gotta wait 1 second
+                        System.Threading.Thread.Sleep(1000);
+
+                        if (File.Exists(finsqlLocationTextbox.Text + @"\naverrorlog.txt"))
+                        {
+                            executeStatusLbl.Text = "Failed!";
+                            executeMessageTextbox.Text = File.ReadAllText(finsqlLocationTextbox.Text + @"\naverrorlog.txt");
+                        }
+                        else
+                        {
+                            executeStatusLbl.Text = "Complete!";
+                            executeMessageTextbox.Text = "OK";
                         }
                     }
-
-                    //NAV creates an error log too late for the latter code to catch it so we gotta wait 1 second
-                    System.Threading.Thread.Sleep(1000);
-
-                    if (File.Exists(finsqlLocationTextbox.Text + @"\naverrorlog.txt"))
+                    catch (Exception ex)
                     {
+                        executeMessageTextbox.Text = ex.Message;
                         executeStatusLbl.Text = "Failed!";
-                        executeMessageTextbox.Text = File.ReadAllText(finsqlLocationTextbox.Text + @"\naverrorlog.txt");
-                    }
-                    else
-                    {
-                        executeStatusLbl.Text = "Complete!";
-                        executeMessageTextbox.Text = "OK";
                     }
                 }
-                catch (Exception ex)
+                else
                 {
-                    executeMessageTextbox.Text = ex.Message;
-                    executeStatusLbl.Text = "Failed!";
+                    executeMessageTextbox.Text = "finsql.exe could not be found at " + finsqlLocationTextbox.Text;
                 }
             }
             else

@@ -1,0 +1,1221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="hr-HR" original="Please update this value">
+    <body>
+      <group id="body">
+        <trans-unit id="Table 3495703852 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Contracts Setup</source>
+          <target>Postava ugovora od jelu</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Ugovori Setup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3495703852 - Field 1663593181 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Primary Key</source>
+          <target>Primarni ključ</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Ugovori Setup - Field Primary Key - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3495703852 - Field 3876982150 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Broj. serija ugovora</source>
+          <target>Broj. serija ugovora</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Ugovori Setup - Field Broj. serija ugovora - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3495703852 - Field 3957172873 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Broj. serija isplata</source>
+          <target>Broj. serija isplata</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Ugovori Setup - Field Broj. serija isplata - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3495703852 - Field 1908697318 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>RS Osoba za kontakt</source>
+          <target>RS Osoba za kontakt</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Ugovori Setup - Field RS Osoba za kontakt - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3495703852 - Field 3303753431 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>RS Telefon za kontakt</source>
+          <target>RS Telefon za kontakt</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Ugovori Setup - Field RS Telefon za kontakt - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3495703852 - Field 3989386084 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>RS E-mail adresa</source>
+          <target>RS E-mail adresa</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Ugovori Setup - Field RS E-mail adresa - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3495703852 - Field 1609044686 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>RS Vrsta obveznika</source>
+          <target>RS Vrsta obveznika</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Ugovori Setup - Field RS Vrsta obveznika - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3495703852 - Field 1251433734 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>RS Vrsta uplate</source>
+          <target>RS Vrsta uplate</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Ugovori Setup - Field RS Vrsta uplate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3495703852 - Field 2283069840 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>RS Disketa</source>
+          <target>RS Disketa</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Ugovori Setup - Field RS Disketa - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3495703852 - Field 3001041207 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>RS pozicija diskete</source>
+          <target>RS pozicija diskete</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Ugovori Setup - Field RS pozicija diskete - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3495703852 - Field 1836140250 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Obveznik PDV-a</source>
+          <target>Obveznik PDV-a</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Ugovori Setup - Field Obveznik PDV-a - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3495703852 - Field 2765898393 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Postotak PDV-a</source>
+          <target>Postotak PDV-a</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Ugovori Setup - Field Postotak PDV-a - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3495703852 - Field 3019339472 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Broj. serija posl. partnera</source>
+          <target>Broj. serija posl. partnera</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Ugovori Setup - Field Broj. serija posl. partnera - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3495703852 - Field 3434248867 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Broj. serija upućivanja u ino.</source>
+          <target>Broj. serija upućivanja u ino.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Ugovori Setup - Field Broj. serija upućivanja u ino. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3495703852 - Field 725444990 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Temeljnica</source>
+          <target>Temeljnica</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Ugovori Setup - Field Temeljnica - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3495703852 - Field 1876108223 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Paket temeljnice</source>
+          <target>Paket temeljnice</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Ugovori Setup - Field Paket temeljnice - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3495703852 - Field 1793467140 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Putanja za temeljnicu</source>
+          <target>Putanja za temeljnicu</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Ugovori Setup - Field Putanja za temeljnicu - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 800308181 - NamedType 2151275820" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Nisu moguće promjene u zaključenoj isplati!</source>
+          <target>Nisu moguće promjene u zaključenoj isplati!</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak inozemstva - NamedType msg001</note>
+        </trans-unit>
+        <trans-unit id="Table 861895558 - Field 4194177727 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Broj</source>
+          <target>Broj</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Knjiženi ugovori - Field Broj - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 861895558 - Field 2344572711 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Vrsta ugovora</source>
+          <target>Vrsta ugovora</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Knjiženi ugovori - Field Vrsta ugovora - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 861895558 - Field 1834167426 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Izvršitelj Broj</source>
+          <target>Izvršitelj Broj</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Knjiženi ugovori - Field Izvršitelj Broj - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 861895558 - Field 1235143202 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Izvršitelj puno Ime</source>
+          <target>Izvršitelj puno Ime</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Knjiženi ugovori - Field Izvršitelj puno Ime - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 861895558 - Field 1623906016 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Radno mjesto</source>
+          <target>Radno mjesto</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Knjiženi ugovori - Field Radno mjesto - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 861895558 - Field 1383476872 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Opis Posla</source>
+          <target>Opis Posla</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Knjiženi ugovori - Field Opis Posla - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 861895558 - Field 1284412714 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Datum ugovora</source>
+          <target>Datum ugovora</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Knjiženi ugovori - Field Datum ugovora - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 861895558 - Field 4241838129 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Datum roka izvršenja</source>
+          <target>Datum roka izvršenja</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Knjiženi ugovori - Field Datum roka izvršenja - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 861895558 - Field 1781564573 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Vrijeme izvršenja</source>
+          <target>Vrijeme izvršenja</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Knjiženi ugovori - Field Vrijeme izvršenja - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 861895558 - Field 491649494 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Dodatne opaske</source>
+          <target>Dodatne opaske</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Knjiženi ugovori - Field Dodatne opaske - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 861895558 - Field 1530306060 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Račun isplate</source>
+          <target>Račun isplate</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Knjiženi ugovori - Field Račun isplate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 861895558 - Field 765884875 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bruto/Neto</source>
+          <target>Bruto/Neto</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Knjiženi ugovori - Field Bruto/Neto - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 861895558 - Field 3726622010 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Iznos ugovora</source>
+          <target>Iznos ugovora</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Knjiženi ugovori - Field Iznos ugovora - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 861895558 - Field 332341089 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Iznos isplate</source>
+          <target>Iznos isplate</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Knjiženi ugovori - Field Iznos isplate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 861895558 - Field 1052721282 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Iznos Obrade</source>
+          <target>Iznos Obrade</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Knjiženi ugovori - Field Iznos Obrade - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 861895558 - Field 3594568112 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Currency Code</source>
+          <target>Valuta ugovora</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Knjiženi ugovori - Field Valuta ugovora - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 861895558 - Field 553977258 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Banka računa isplate</source>
+          <target>Banka računa isplate</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Knjiženi ugovori - Field Banka računa isplate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 861895558 - Field 1791743978 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Closed</source>
+          <target>Zaključen</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Knjiženi ugovori - Field Zaključen - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 861895558 - Field 3243609755 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Vrsta ugovora za obradu</source>
+          <target>Vrsta ugovora za obradu</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Knjiženi ugovori - Field Vrsta ugovora za obradu - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 861895558 - Field 4190257604 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Osnov osiguranja</source>
+          <target>Osnov osiguranja</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Knjiženi ugovori - Field Osnova obračuna OO - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 861895558 - Field 1847655811 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invalidnost</source>
+          <target>Invalidnost</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Knjiženi ugovori - Field Osnova obračuna I - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 861895558 - Field 272384006 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Uvećani staž</source>
+          <target>Uvećani staž</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Knjiženi ugovori - Field Osnova obračuna B - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 861895558 - Field 1078989646 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Zdravstveno osiguranje</source>
+          <target>Zdravstveno osiguranje</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Knjiženi ugovori - Field Osnova obračuna Z - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 861895558 - Field 2508251908 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Osnova obračuna SSRR</source>
+          <target>Osnova obračuna SSRR</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Knjiženi ugovori - Field Osnova obračuna SSRR - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 861895558 - Field 1303377601 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Global Dimension 1 Code</source>
+          <target>Šifra globalne dimenzije 1</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Knjiženi ugovori - Field Global Dimension 1 Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 861895558 - Field 1337243520 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Global Dimension 2 Code</source>
+          <target>Šifra globalne dimenzije 2</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Knjiženi ugovori - Field Global Dimension 2 Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 861895558 - NamedType 2151275820" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ne možete obrisati knjiženi ugovor!</source>
+          <target>Ne možete obrisati knjiženi ugovor!</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Knjiženi ugovori - NamedType msg001</note>
+        </trans-unit>
+        <trans-unit id="Table 623292048 - Field 3967881745 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Redni broj unosa</source>
+          <target>Redni broj unosa</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Brzi unos - Field Redni broj unosa - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 623292048 - Field 2284096777 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>MBG/Porezni broj</source>
+          <target>MBG/Porezni broj</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Brzi unos - Field MBG/Porezni broj - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 623292048 - Field 2730858791 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Broj poslovnog partnera</source>
+          <target>Broj poslovnog partnera</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Brzi unos - Field Broj poslovnog partnera - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 623292048 - Field 2129558763 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ime</source>
+          <target>Ime</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Brzi unos - Field Ime - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 623292048 - Field 1381584008 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Prezime</source>
+          <target>Prezime</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Brzi unos - Field Prezime - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 623292048 - Field 3172806803 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sudionik II stupa MO</source>
+          <target>Sudionik II stupa MO</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Brzi unos - Field Sudionik II stupa MO - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 623292048 - Field 815190818 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Šifra općine</source>
+          <target>Šifra općine</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Brzi unos - Field Šifra općine - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 623292048 - Field 1836140250 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Obveznik PDV-a</source>
+          <target>Obveznik PDV-a</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Brzi unos - Field Obveznik PDV-a - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 623292048 - Field 2765898393 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Postotak PDV-a</source>
+          <target>Postotak PDV-a</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Brzi unos - Field Postotak PDV-a - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 623292048 - Field 808643349 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Indikator kontrole</source>
+          <target>Indikator kontrole</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Brzi unos - Field Indikator kontrole - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 623292048 - Field 3248232884 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Šifra banke</source>
+          <target>Šifra banke</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Brzi unos - Field Šifra banke - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 623292048 - Field 2203831314 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Račun</source>
+          <target>Račun</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Brzi unos - Field Račun - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 623292048 - Field 822315734 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Broj ugovora</source>
+          <target>Broj ugovora</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Brzi unos - Field Broj ugovora - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 623292048 - Field 2344572711 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Vrsta ugovora</source>
+          <target>Vrsta ugovora</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Brzi unos - Field Vrsta ugovora - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 623292048 - Field 1623906016 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Radno mjesto</source>
+          <target>Radno mjesto</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Brzi unos - Field Radno mjesto - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 623292048 - Field 765884875 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bruto/Neto</source>
+          <target>Bruto/Neto</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Brzi unos - Field Bruto/Neto - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 623292048 - Field 1052721282 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Iznos Obrade</source>
+          <target>Iznos Obrade</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Brzi unos - Field Iznos Obrade - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 623292048 - Field 3594568112 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Valuta ugovora</source>
+          <target>Valuta ugovora</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Brzi unos - Field Valuta ugovora - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 623292048 - Field 1284412714 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Datum ugovora</source>
+          <target>Datum ugovora</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Brzi unos - Field Datum ugovora - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 623292048 - Field 1994484092 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Šifra općine rada</source>
+          <target>Šifra općine rada</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Brzi unos - Field Šifra općine rada - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 623292048 - Field 4190257604 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Osnov osiguranja</source>
+          <target>Osnov osiguranja</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Brzi unos - Field Osnova obračuna OO - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 623292048 - Field 1847655811 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invalidnost</source>
+          <target>Invalidnost</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Brzi unos - Field Osnova obračuna I - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 623292048 - Field 272384006 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Uvećani staž</source>
+          <target>Uvećani staž</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Brzi unos - Field Osnova obračuna B - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 623292048 - Field 1078989646 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Zdravstveno osiguranje</source>
+          <target>Zdravstveno osiguranje</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Brzi unos - Field Osnova obračuna Z - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 623292048 - Field 2508251908 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Osnova obračuna SSRR</source>
+          <target>Osnova obračuna SSRR</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Brzi unos - Field Osnova obračuna SSRR - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 623292048 - Field 3660300303 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Post Code</source>
+          <target>Poštanski broj</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Brzi unos - Field Post Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 623292048 - Field 2087999386 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sex</source>
+          <target>Spol</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Brzi unos - Field Sex - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 623292048 - Field 2087999386 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source> ,Female,Male</source>
+          <target> ,Ženski,Muški</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Brzi unos - Field Sex - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Table 623292048 - Field 1303377601 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Global Dimension 1 Code</source>
+          <target>Šifra globalne dimenzije 1</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Brzi unos - Field Global Dimension 1 Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 623292048 - Field 1337243520 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Global Dimension 2 Code</source>
+          <target>Šifra globalne dimenzije 2</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Brzi unos - Field Global Dimension 2 Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 623292048 - Field 231855620 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Br. serija poslov. partnera</source>
+          <target>Br. serija poslov. partnera</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Brzi unos - Field Br. serija poslov. partnera - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 623292048 - Field 3168444338 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Address</source>
+          <target>Adresa</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Brzi unos - Field Address - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 623292048 - NamedType 2151275820" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Neodgovarajući broj znamenaka: %1!</source>
+          <target>Neodgovarajući broj znamenaka: %1!</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Brzi unos - NamedType msg001</note>
+        </trans-unit>
+        <trans-unit id="Table 623292048 - NamedType 2788972437" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Neodgovarajući kontrolni broj!</source>
+          <target>Neodgovarajući kontrolni broj!</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Brzi unos - NamedType msg002</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 751900701 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Broj Isplate</source>
+          <target>Broj Isplate</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Broj Isplate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 3243609755 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Vrsta ugovora za obradu</source>
+          <target>Vrsta ugovora za obradu</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Vrsta ugovora za obradu - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 4001213201 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Datum isplate</source>
+          <target>Datum isplate</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Datum isplate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 1597026892 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Godina obrade</source>
+          <target>Godina obrade</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Godina za koju se vrši obrada - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 1621280135 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Mjesec obrade</source>
+          <target>Mjesec obrade</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Mjesec za koji se vrši obrada - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 91554640 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Identifikator R-S obrasca</source>
+          <target>Identifikator R-S obrasca</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Identifikator R-S obrasca - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 686378822 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Faza rada</source>
+          <target>Faza rada</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Faza rada - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 882937590 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Broj Ugovora</source>
+          <target>Broj Ugovora</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Broj Ugovora - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 2344572711 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Vrsta ugovora</source>
+          <target>Vrsta ugovora</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Vrsta ugovora - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 1834167426 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Izvršitelj Broj</source>
+          <target>Izvršitelj Broj</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Izvršitelj Broj - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 1235143202 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Izvršitelj puno Ime</source>
+          <target>Izvršitelj puno Ime</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Izvršitelj puno Ime - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 1623906016 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Radno mjesto</source>
+          <target>Radno mjesto</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Radno mjesto - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 1383476872 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Opis Posla</source>
+          <target>Opis Posla</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Opis Posla - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 1284412714 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Datum ugovora</source>
+          <target>Datum ugovora</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Datum ugovora - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 4241838129 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Datum roka izvršenja</source>
+          <target>Datum roka izvršenja</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Datum roka izvršenja - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 1781564573 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Vrijeme izvršenja</source>
+          <target>Vrijeme izvršenja</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Vrijeme izvršenja - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 867006044 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Dodatni komentar</source>
+          <target>Dodatni komentar</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Dodatni komentar - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 1530306060 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Račun isplate</source>
+          <target>Račun isplate</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Račun isplate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 765884875 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bruto/Neto</source>
+          <target>Bruto/Neto</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Bruto/Neto - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 531696587 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Iznos ugovora (LVT)</source>
+          <target>Iznos ugovora (LVT)</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Iznos ugovora (LVT) - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 2378914564 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Iznos isplate (LVT)</source>
+          <target>Iznos isplate (LVT)</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Iznos isplate (LVT) - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 2850248067 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Iznos Obrade (LVT)</source>
+          <target>Iznos Obrade (LVT)</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Iznos Obrade (LVT) - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 553977258 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Banka računa isplate</source>
+          <target>Banka računa isplate</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Banka računa isplate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 2160755717 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Postotak priznatog izdatka</source>
+          <target>Postotak priznatog izdatka</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Postotak priznatog izdatka - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 3793380261 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Postotak doprinosa MO I stup</source>
+          <target>Postotak doprinosa MO I stup</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Postotak doprinosa MO I stup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 185834302 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Postotak doprinosa MO II stup</source>
+          <target>Postotak doprinosa MO II stup</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Postotak doprinosa MO II stup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 606939857 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Postotak doprinosa ZO</source>
+          <target>Postotak doprinosa ZO</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Postotak doprinosa ZO - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 4220687654 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Postotak poreza</source>
+          <target>Postotak poreza</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Postotak poreza - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 3177525061 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Iznos priznatog izdatka</source>
+          <target>Iznos priznatog izdatka</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Iznos priznatog izdatka - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 110303973 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Iznos doprinosa MO I stup</source>
+          <target>Iznos doprinosa MO I stup</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Iznos doprinosa MO I stup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 1776857598 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Iznos doprinosa MO II stup</source>
+          <target>Iznos doprinosa MO II stup</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Iznos doprinosa MO II stup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 3316201617 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Iznos doprinosa ZO</source>
+          <target>Iznos doprinosa ZO</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Iznos doprinosa ZO - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 3681178470 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Iznos poreza</source>
+          <target>Iznos poreza</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Iznos poreza - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 411528779 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Search Name</source>
+          <target>Ime za traženje</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Search Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 3168444338 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Address</source>
+          <target>adresa</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Address - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 2306852000 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Address 2</source>
+          <target>Adresa 2</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Address 2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 714791889 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>City</source>
+          <target>Grad</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field City - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 3660300303 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Post Code</source>
+          <target>Poštanski broj</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Post Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 499448942 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>County</source>
+          <target>Država</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field County - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 2542713143 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Country Code</source>
+          <target>Šifra države</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Country Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 1303377601 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Global Dimension 1 Code</source>
+          <target>Šifra globalne dimenzije 1</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Global Dimension 1 Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 1337243520 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Global Dimension 2 Code</source>
+          <target>Šifra globalne dimenzije 2</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Global Dimension 2 Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 1861213814 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Global Dimension 1 Filter</source>
+          <target>Filter globalne dimenzije 1</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Global Dimension 1 Filter - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 588326355 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Global Dimension 2 Filter</source>
+          <target>Filter globalne dimenzije 1</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Global Dimension 2 Filter - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 3860533616 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Employee ID</source>
+          <target>OIB</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field OIB - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 3172806803 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sudionik II stupa MO</source>
+          <target>Sudionik II stupa MO</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Sudionik II stupa MO - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 154411907 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Primitak</source>
+          <target>Primitak</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Primitak - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 519600640 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Osnovica za doprinose</source>
+          <target>Osnovica za doprinose</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Osnovica za doprinose - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 3518192098 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Postotak Prireza</source>
+          <target>Postotak Prireza</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Postotak Prireza - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 3235054018 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Iznos prireza</source>
+          <target>Iznos prireza</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Iznos prireza - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 4014105209 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ukupno porez i prirez</source>
+          <target>Ukupno porez i prirez</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Ukupno porez i prirez - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 3682868263 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Porezna osnovica</source>
+          <target>Porezna osnovica</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Porezna osnovica - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 2202963169 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Neto svota</source>
+          <target>Neto svota</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Neto svota - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 815190818 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Šifra općine</source>
+          <target>Šifra općine</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Šifra općine - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 4237420025 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Brojčane ozn. za vrste dohotka</source>
+          <target>Brojčane ozn. za vrste dohotka</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Brojčane ozn. za vrste dohotka - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 3888773732 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Stranac</source>
+          <target>Stranac</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Stranac - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 2129558763 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ime</source>
+          <target>Ime</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Ime - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 1381584008 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Prezime</source>
+          <target>Prezime</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Prezime - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 3880705076 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Postotak izdatka od dohotka</source>
+          <target>Postotak izdatka od dohotka</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Postotak izdatka od dohotka - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 3040918132 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Iznos izdatka od dohotka</source>
+          <target>Iznos izdatka od dohotka</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Iznos izdatka od dohotka - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 2765898393 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Postotak PDV-a</source>
+          <target>Postotak PDV-a</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Postotak PDV-a - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 1565074393 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Iznos PDV-a</source>
+          <target>Iznos PDV-a</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Iznos PDV-a - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 1994484092 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Šifra općine rada</source>
+          <target>Šifra općine rada</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Šifra općine rada - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 4190257604 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Osnov osiguranja</source>
+          <target>Osnov osiguranja</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Osnova obračuna OO - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 1847655811 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invalidnost</source>
+          <target>Invalidnost</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Osnova obračuna I - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 272384006 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Uvećani staž</source>
+          <target>Uvećani staž</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Osnova obračuna B - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 1078989646 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Zdravstveno osiguranje</source>
+          <target>Zdravstveno osiguranje</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Osnova obračuna Z - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 2508251908 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Osnova obračuna SSRR</source>
+          <target>Osnova obračuna SSRR</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Osnova obračuna SSRR - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 3726622010 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Iznos ugovora</source>
+          <target>Iznos ugovora</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Iznos ugovora - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 332341089 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Iznos isplate</source>
+          <target>Iznos isplate</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Iznos isplate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 4240695394 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Iznos obrade</source>
+          <target>Iznos obrade</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Iznos obrade - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 3594568112 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Currency Code</source>
+          <target>Valuta ugovora</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Valuta ugovora - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 829469557 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Stipendija</source>
+          <target>Stipendija</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Stipendija - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - Field 1662452562 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Neoporezivi iznos stipendije</source>
+          <target>Neoporezivi iznos stipendije</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - Field Neoporezivi iznos stipendije - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1430569830 - NamedType 2151275820" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ne možete obrisati knjiženu isplatu!</source>
+          <target>Ne možete obrisati knjiženu isplatu!</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Redak Knjižene Isplate - NamedType msg001</note>
+        </trans-unit>
+        <trans-unit id="Table 4222589133 - Field 4194177727 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Broj</source>
+          <target>Broj</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Zaglavlje Knjižene Isplate - Field Broj - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4222589133 - Field 3243609755 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Vrsta ugovora za obradu</source>
+          <target>Vrsta ugovora za obradu</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Zaglavlje Knjižene Isplate - Field Vrsta ugovora za obradu - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4222589133 - Field 4001213201 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Datum isplate</source>
+          <target>Datum isplate</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Zaglavlje Knjižene Isplate - Field Datum isplate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4222589133 - Field 1597026892 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Godina obrade</source>
+          <target>Godina obrade</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Zaglavlje Knjižene Isplate - Field Godina za koju se vrši obrada - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4222589133 - Field 1621280135 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Mjesec obrade</source>
+          <target>Mjesec obrade</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Zaglavlje Knjižene Isplate - Field Mjesec za koji se vrši obrada - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4222589133 - Field 91554640 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Identifikator R-S obrasca</source>
+          <target>Identifikator R-S obrasca</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Zaglavlje Knjižene Isplate - Field Identifikator R-S obrasca - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4222589133 - Field 686378822 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Faza rada</source>
+          <target>Faza rada</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Zaglavlje Knjižene Isplate - Field Faza rada - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4222589133 - Field 470594467 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Rekapitulacija</source>
+          <target>Rekapitulacija</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Zaglavlje Knjižene Isplate - Field Rekapitulacija - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4222589133 - Field 3154464825 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Rekapitulacija po org. jed.</source>
+          <target>Rekapitulacija po org. jed.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Zaglavlje Knjižene Isplate - Field Rekapitulacija po org. jed. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4222589133 - Field 1082287251 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>R-S disketa</source>
+          <target>R-S disketa</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Zaglavlje Knjižene Isplate - Field R-S disketa - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4222589133 - Field 1743567066 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>R-S hash</source>
+          <target>R-S hash</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Zaglavlje Knjižene Isplate - Field R-S hash - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4222589133 - Field 1544995144 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>R-S a stranica</source>
+          <target>R-S a stranica</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Zaglavlje Knjižene Isplate - Field R-S a stranica - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4222589133 - Field 2464736249 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>R-S b stranica</source>
+          <target>R-S b stranica</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Zaglavlje Knjižene Isplate - Field R-S b stranica - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4222589133 - Field 471018796 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Obračunski listići</source>
+          <target>Obračunski listići</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Zaglavlje Knjižene Isplate - Field Obračunski listići - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4222589133 - Field 2662914854 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Zbrojni nalog, punjenje</source>
+          <target>Zbrojni nalog, punjenje</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Zaglavlje Knjižene Isplate - Field Zbrojni nalog, punjenje - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4222589133 - Field 503187409 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Potvrda izvješća</source>
+          <target>Potvrda izvješća</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Zaglavlje Knjižene Isplate - Field Potvrda izvješća - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4222589133 - NamedType 2151275820" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ne možete obrisati knjiženu isplatu!</source>
+          <target>Ne možete obrisati knjiženu isplatu!</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Zaglavlje Knjižene Isplate - NamedType msg001</note>
+        </trans-unit>
+        <trans-unit id="Table 3005788051 - Field 4194177727 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Broj</source>
+          <target>Broj</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Ugovori UOD - Field Broj - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3005788051 - Field 2344572711 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Vrsta ugovora</source>
+          <target>Vrsta ugovora</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Ugovori UOD - Field Vrsta ugovora - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3005788051 - Field 1834167426 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Izvršitelj Broj</source>
+          <target>Izvršitelj Broj</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Ugovori UOD - Field Izvršitelj Broj - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3005788051 - Field 1235143202 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Izvršitelj puno Ime</source>
+          <target>Izvršitelj puno Ime</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Ugovori UOD - Field Izvršitelj puno Ime - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3005788051 - Field 1623906016 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Radno mjesto</source>
+          <target>Radno mjesto</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Ugovori UOD - Field Radno mjesto - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3005788051 - Field 1383476872 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Opis Posla</source>
+          <target>Opis Posla</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Ugovori UOD - Field Opis Posla - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3005788051 - Field 1284412714 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Datum ugovora</source>
+          <target>Datum ugovora</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Ugovori UOD - Field Datum ugovora - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3005788051 - Field 4241838129 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Datum roka izvršenja</source>
+          <target>Datum roka izvršenja</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Ugovori UOD - Field Datum roka izvršenja - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3005788051 - Field 1781564573 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Vrijeme izvršenja</source>
+          <target>Vrijeme izvršenja</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Ugovori UOD - Field Vrijeme izvršenja - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3005788051 - Field 491649494 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Dodatne opaske</source>
+          <target>Dodatne opaske</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Ugovori UOD - Field Dodatne opaske - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3005788051 - Field 1530306060 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Račun isplate</source>
+          <target>Račun isplate</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Ugovori UOD - Field Račun isplate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3005788051 - Field 765884875 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bruto/Neto</source>
+          <target>Bruto/Neto</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Ugovori UOD - Field Bruto/Neto - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3005788051 - Field 3726622010 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Iznos ugovora</source>
+          <target>Iznos ugovora</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Ugovori UOD - Field Iznos ugovora - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3005788051 - Field 332341089 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Iznos isplate</source>
+          <target>Iznos isplate</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Ugovori UOD - Field Iznos isplate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3005788051 - Field 1052721282 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Iznos obrade</source>
+          <target>Iznos obrade</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Ugovori UOD - Field Iznos Obrade - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3005788051 - Field 3594568112 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Currency Code</source>
+          <target>Valuta ugovora</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Ugovori UOD - Field Valuta ugovora - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3005788051 - Field 553977258 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Banka računa isplate</source>
+          <target>Banka računa isplate</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Ugovori UOD - Field Banka računa isplate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3005788051 - Field 1791743978 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Closed</source>
+          <target>Zaključen</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Ugovori UOD - Field Zaključen - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3005788051 - Field 3243609755 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Vrsta ugovora za obradu</source>
+          <target>Vrsta ugovora za obradu</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Ugovori UOD - Field Vrsta ugovora za obradu - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3005788051 - Field 1351594800 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No. Series</source>
+          <target>Brojčana serija</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Ugovori UOD - Field No. Series - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3005788051 - Field 1847655811 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invalidnost</source>
+          <target>Invalidnost</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Ugovori UOD - Field Osnova obračuna I - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3005788051 - Field 272384006 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Uvećani staž</source>
+          <target>Uvećani staž</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Ugovori UOD - Field Osnova obračuna B - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3005788051 - Field 1078989646 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Zdravstveno osiguranje</source>
+          <target>Zdravstveno osiguranje</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Ugovori UOD - Field Osnova obračuna Z - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3005788051 - Field 2508251908 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Osnova obračuna SSRR</source>
+          <target>Osnova obračuna SSRR</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Ugovori UOD - Field Osnova obračuna SSRR - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3005788051 - Field 1303377601 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Global Dimension 1 Code</source>
+          <target>Šifra globalne dimenzije 1</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Ugovori UOD - Field Global Dimension 1 Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3005788051 - Field 1337243520 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Global Dimension 2 Code</source>
+          <target>Šifra globalne dimenzije 2</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Ugovori UOD - Field Global Dimension 2 Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3005788051 - Field 1297074853 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Šifra banke za tečaj</source>
+          <target>Šifra banke za tečaj</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Ugovori UOD - Field Šifra banke za tečaj - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3005788051 - Field 2434997534 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Šifra tečaja</source>
+          <target>Šifra tečaja</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Ugovori UOD - Field Šifra tečaja - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3005788051 - Field 3789956862 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Šifra datuma tečaja</source>
+          <target>Šifra datuma tečaja</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Ugovori UOD - Field Šifra datuma tečaja - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3005788051 - NamedType 2151275820" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Za djelatnika %1 nije definiran niti jedan žiro račun!</source>
+          <target>Za djelatnika %1 nije definiran niti jedan žiro račun!</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Ugovori UOD - NamedType msg001</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

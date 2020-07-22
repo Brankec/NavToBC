@@ -1,0 +1,295 @@
+OBJECT Table 38024259 Brzi unos
+{
+  OBJECT-PROPERTIES
+  {
+    Date=20200429D;
+    Time=003022.133T;
+    Modified=true;
+    Version List=DIGUD00;
+  }
+  PROPERTIES
+  {
+  }
+  FIELDS
+  {
+    { 1   ;   ;Redni broj unosa    ;Integer       ;AutoIncrement=true;
+                                                   CaptionML=HRV=Redni broj unosa }
+    { 2   ;   ;MBG/Porezni broj    ;Code13        ;OnValidate=BEGIN
+                                                                if "MBG/Porezni broj" <> '' then begin
+                                                                  if STRLEN("MBG/Porezni broj") <> 13 then
+                                                                    ERROR(msg001, STRLEN("MBG/Porezni broj"));
+                                                                  Modul11 := STRCHECKSUM("MBG/Porezni broj", '7654327654321', 11);
+                                                                  if Modul11 <> 0 then
+                                                                    ERROR(msg002);
+
+                                                                  recPosPar.RESET;
+                                                                  recPosPar.SETFILTER("Employee ID","MBG/Porezni broj");
+                                                                  if recPosPar.FIND('-') then begin
+                                                                    "Broj poslovnog partnera" := recPosPar."No.";
+                                                                    Ime                       := recPosPar."First Name";
+                                                                    Prezime                   := recPosPar."Last Name";
+                                                                    "Sudionik II stupa MO"    := recPosPar."Sudionik II stupa MO";
+                                                                    "Êifra opÜine"            := recPosPar."Êifra opÜine";
+                                                                    "Êifra opÜine rada"       := recPosPar."Êifra opÜine rada";
+                                                                    "Obveznik PDV-a"          := recPosPar."Obveznik PDV-a";
+                                                                    "Postotak PDV-a"          := recPosPar."Postotak PDV-a";
+                                                                    "Global Dimension 1 Code" := recPosPar."Global Dimension 1 Code";
+                                                                    "Global Dimension 2 Code" := recPosPar."Global Dimension 2 Code";
+                                                                    Sex                       := recPosPar.Sex;
+                                                                    "Post Code"               := recPosPar."Post Code";
+
+                                                                    "rec¶irRaüPosPar".RESET;
+                                                                    "rec¶irRaüPosPar".SETRANGE("Êifra djelatnika", "Broj poslovnog partnera");
+                                                                    "rec¶irRaüPosPar".SETRANGE("Glavni raüun", true);
+                                                                    if "rec¶irRaüPosPar".FIND('-') then begin
+                                                                      "Êifra banke" := "rec¶irRaüPosPar"."Êifra banke";
+                                                                      Raüun         := "rec¶irRaüPosPar".Raüun;
+                                                                    end else begin
+                                                                      "Êifra banke" := '';
+                                                                      Raüun         := '';
+                                                                    end;
+                                                                  end else begin
+                                                                    "Broj poslovnog partnera" := '';
+                                                                    Ime                       := '';
+                                                                    Prezime                   := '';
+                                                                    "Sudionik II stupa MO"    := false;
+                                                                    "Êifra opÜine"            := '';
+                                                                    "Obveznik PDV-a"          := false;
+                                                                    "Postotak PDV-a"          := 0;
+                                                                    "Êifra banke"             := '';
+                                                                    Raüun                     := '';
+                                                                    "Global Dimension 1 Code" := '';
+                                                                    "Global Dimension 2 Code" := '';
+                                                                    Sex                       := 0;
+                                                                    "Post Code"               := '';
+                                                                  end;
+                                                                end else begin
+                                                                  "Broj poslovnog partnera" := '';
+                                                                  Ime                       := '';
+                                                                  Prezime                   := '';
+                                                                  "Sudionik II stupa MO"    := false;
+                                                                  "Êifra opÜine"            := '';
+                                                                  "Obveznik PDV-a"          := false;
+                                                                  "Postotak PDV-a"          := 0;
+                                                                  "Êifra banke"             := '';
+                                                                  Raüun                     := '';
+                                                                  "Global Dimension 1 Code" := '';
+                                                                  "Global Dimension 2 Code" := '';
+                                                                  Sex                       := 0;
+                                                                  "Post Code"               := '';
+                                                                end;
+                                                              END;
+
+                                                   CaptionML=HRV=MBG/Porezni broj }
+    { 3   ;   ;Broj poslovnog partnera;Code20     ;OnValidate=BEGIN
+                                                                if "Broj poslovnog partnera" <> '' then begin
+                                                                  if recPosPar.GET("Broj poslovnog partnera") then begin
+                                                                    "MBG/Porezni broj"     := recPosPar."Employee ID";
+                                                                    Ime                    := recPosPar."First Name";
+                                                                    Prezime                := recPosPar."Last Name";
+                                                                    "Sudionik II stupa MO" := recPosPar."Sudionik II stupa MO";
+                                                                    "Êifra opÜine"         := recPosPar."Êifra opÜine";
+                                                                    "Êifra opÜine rada"    := recPosPar."Êifra opÜine rada";
+                                                                    "Obveznik PDV-a"       := recPosPar."Obveznik PDV-a";
+                                                                    "Postotak PDV-a"       := recPosPar."Postotak PDV-a";
+                                                                    Sex                    := recPosPar.Sex;
+                                                                    "Post Code"            := recPosPar."Post Code";
+                                                                    "Global Dimension 1 Code" := recPosPar."Global Dimension 1 Code";
+                                                                    "Global Dimension 2 Code" := recPosPar."Global Dimension 2 Code";
+
+                                                                    "rec¶irRaüPosPar".RESET;
+                                                                    "rec¶irRaüPosPar".SETRANGE("Êifra djelatnika", "Broj poslovnog partnera");
+                                                                    "rec¶irRaüPosPar".SETRANGE("Glavni raüun", true);
+                                                                    if "rec¶irRaüPosPar".FIND('-') then begin
+                                                                      "Êifra banke" := "rec¶irRaüPosPar"."Êifra banke";
+                                                                      Raüun         := "rec¶irRaüPosPar".Raüun;
+                                                                    end else begin
+                                                                      "Êifra banke" := '';
+                                                                      Raüun         := '';
+                                                                    end;
+                                                                  end else begin
+                                                                    "MBG/Porezni broj"     := '';
+                                                                    Ime                    := '';
+                                                                    Prezime                := '';
+                                                                    "Sudionik II stupa MO" := false;
+                                                                    "Êifra opÜine"         := '';
+                                                                    "Êifra opÜine rada"    := '';
+                                                                    "Obveznik PDV-a"       := false;
+                                                                    "Postotak PDV-a"       := 0;
+                                                                    "Êifra banke"          := '';
+                                                                    Raüun                  := '';
+                                                                    Sex                    := 0;
+                                                                    "Post Code"               := '';
+                                                                    "Global Dimension 1 Code" := '';
+                                                                    "Global Dimension 2 Code" := '';
+                                                                   end;
+                                                                end else begin
+                                                                  "MBG/Porezni broj"     := '';
+                                                                  Ime                    := '';
+                                                                  Prezime                := '';
+                                                                  "Sudionik II stupa MO" := false;
+                                                                  "Êifra opÜine"         := '';
+                                                                  "Obveznik PDV-a"       := false;
+                                                                  "Postotak PDV-a"       := 0;
+                                                                  "Êifra banke"          := '';
+                                                                  Raüun                  := '';
+                                                                  Sex                    := 0;
+                                                                  "Post Code"               := '';
+                                                                  "Global Dimension 1 Code" := '';
+                                                                  "Global Dimension 2 Code" := '';
+                                                                end;
+                                                              END;
+
+                                                   CaptionML=HRV=Broj poslovnog partnera }
+    { 4   ;   ;Ime                 ;Text30        ;CaptionML=HRV=Ime }
+    { 5   ;   ;Prezime             ;Text30        ;CaptionML=HRV=Prezime }
+    { 6   ;   ;Sudionik II stupa MO;Boolean       ;CaptionML=HRV=Sudionik II stupa MO }
+    { 7   ;   ;Êifra opÜine        ;Code20        ;TableRelation="OpÜina";
+                                                   CaptionML=HRV=Êifra opÜine }
+    { 8   ;   ;Obveznik PDV-a      ;Boolean       ;OnValidate=BEGIN
+                                                                if "Obveznik PDV-a" = true then begin
+                                                                  recUgoSet.GET;
+                                                                  "Postotak PDV-a" := recUgoSet."Postotak PDV-a";
+                                                                end else begin
+                                                                  "Postotak PDV-a" := 0;
+                                                                end;
+                                                              END;
+
+                                                   CaptionML=HRV=Obveznik PDV-a }
+    { 9   ;   ;Postotak PDV-a      ;Decimal       ;CaptionML=HRV=Postotak PDV-a }
+    { 10  ;   ;Indikator kontrole  ;Boolean       ;CaptionML=HRV=Indikator kontrole;
+                                                   Editable=false }
+    { 11  ;   ;Êifra banke         ;Code20        ;TableRelation=Banka;
+                                                   CaptionML=HRV=Êifra banke }
+    { 12  ;   ;Raüun               ;Text50        ;CaptionML=HRV=Raüun }
+    { 13  ;   ;Broj ugovora        ;Code20        ;TableRelation="Ugovori UOD".Broj WHERE ("IzvrÁitelj Broj"=FIELD("Broj poslovnog partnera"));
+                                                   OnValidate=BEGIN
+                                                                if "Broj ugovora" <> '' then begin
+                                                                  if recUgo.GET("Broj ugovora") then begin
+                                                                    "Vrsta ugovora"        := recUgo."Vrsta ugovora";
+                                                                    "Radno mjesto"         := recUgo."Radno mjesto";
+                                                                    "Bruto/Neto"           := recUgo."Bruto/Neto";
+                                                                    "Iznos Obrade"         := recUgo."Iznos Obrade";
+                                                                    "Valuta ugovora"       := recUgo."Valuta ugovora";
+                                                                    "Osnova obraüuna OO"   := recUgo."Osnova obraüuna OO";
+                                                                    "Osnova obraüuna I"    := recUgo."Osnova obraüuna I";
+                                                                    "Osnova obraüuna B"    := recUgo."Osnova obraüuna B";
+                                                                    "Osnova obraüuna Z"    := recUgo."Osnova obraüuna Z";
+                                                                    "Osnova obraüuna SSRR" := recUgo."Osnova obraüuna SSRR";
+                                                                    "Datum ugovora"        := recUgo."Datum ugovora";
+                                                                    "Êifra banke"          := recUgo."Banka raüuna isplate";
+                                                                    Raüun                  := recUgo."Raüun isplate";
+                                                                  end else begin
+                                                                    "Vrsta ugovora"        := '';
+                                                                    "Radno mjesto"         := '';
+                                                                    "Bruto/Neto"           := 0;
+                                                                    "Iznos Obrade"         := 0;
+                                                                    "Valuta ugovora"       := '';
+                                                                    "Osnova obraüuna OO"   := '';
+                                                                    "Osnova obraüuna I"    := '';
+                                                                    "Osnova obraüuna B"    := '';
+                                                                    "Osnova obraüuna Z"    := '';
+                                                                    "Osnova obraüuna SSRR" := '';
+                                                                    "Datum ugovora"        := 0D;
+                                                                    "Êifra banke"          := '';
+                                                                    Raüun                  := '';
+                                                                   end;
+                                                                end else begin
+                                                                  "Vrsta ugovora"        := '';
+                                                                  "Radno mjesto"         := '';
+                                                                  "Bruto/Neto"           := 0;
+                                                                  "Iznos Obrade"         := 0;
+                                                                  "Valuta ugovora"       := '';
+                                                                  "Osnova obraüuna OO"   := '';
+                                                                  "Osnova obraüuna I"    := '';
+                                                                  "Osnova obraüuna B"    := '';
+                                                                  "Osnova obraüuna Z"    := '';
+                                                                  "Osnova obraüuna SSRR" := '';
+                                                                  "Datum ugovora"        := 0D;
+                                                                  "Êifra banke"          := '';
+                                                                  Raüun                  := '';
+                                                                end;
+                                                              END;
+
+                                                   CaptionML=HRV=Broj ugovora }
+    { 14  ;   ;Vrsta ugovora       ;Code20        ;TableRelation="Vrste UGOD".Broj;
+                                                   OnValidate=BEGIN
+                                                                if "Vrsta ugovora" <> xRec."Vrsta ugovora" then begin
+                                                                  if recVrsUgo.GET("Vrsta ugovora") then
+                                                                    "Osnova obraüuna OO"   := recUgo."Osnova obraüuna OO"
+                                                                  else
+                                                                    "Osnova obraüuna OO"   := '';
+                                                                end;
+                                                              END;
+
+                                                   CaptionML=HRV=Vrsta ugovora }
+    { 15  ;   ;Radno mjesto        ;Text50        ;CaptionML=HRV=Radno mjesto }
+    { 16  ;   ;Bruto/Neto          ;Option        ;CaptionML=HRV=Bruto/Neto;
+                                                   OptionString=Bruto,Neto }
+    { 17  ;   ;Iznos Obrade        ;Decimal       ;CaptionML=HRV=Iznos Obrade }
+    { 18  ;   ;Valuta ugovora      ;Code20        ;TableRelation=Currency;
+                                                   CaptionML=HRV=Valuta ugovora }
+    { 19  ;   ;Datum ugovora       ;Date          ;CaptionML=HRV=Datum ugovora }
+    { 20  ;   ;Êifra opÜine rada   ;Code20        ;TableRelation="OpÜina";
+                                                   CaptionML=HRV=Êifra opÜine rada }
+    { 22  ;   ;Osnova obraüuna OO  ;Code20        ;TableRelation="OpÜina";
+                                                   CaptionML=HRV=Osnov osiguranja }
+    { 23  ;   ;Osnova obraüuna I   ;Code20        ;TableRelation=Invaliditet;
+                                                   CaptionML=HRV=Invalidnost }
+    { 24  ;   ;Osnova obraüuna B   ;Code20        ;TableRelation="UveÜani staß"."Êifra";
+                                                   CaptionML=HRV=UveÜani staß }
+    { 25  ;   ;Osnova obraüuna Z   ;Code20        ;TableRelation="UveÜani staß";
+                                                   CaptionML=HRV=Zdravstveno osiguranje }
+    { 26  ;   ;Osnova obraüuna SSRR;Text4         ;CaptionML=HRV=Osnova obraüuna SSRR }
+    { 33  ;   ;Post Code           ;Code20        ;TableRelation="Post Code";
+                                                   ValidateTableRelation=false;
+                                                   TestTableRelation=false;
+                                                   CaptionML=[ENU=Post Code;
+                                                              HRV=PoÁtanski broj] }
+    { 34  ;   ;Sex                 ;Option        ;CaptionML=[ENU=Sex;
+                                                              HRV=Spol];
+                                                   OptionCaptionML=[ENU=" ,Female,Male";
+                                                                    HRV=" ,¶enski,MuÁki"];
+                                                   OptionString=" ",Female,Male }
+    { 36  ;   ;Global Dimension 1 Code;Code20     ;TableRelation="Dimension Value".Code WHERE ("Global Dimension No."=CONST(1));
+                                                   CaptionML=[ENU=Global Dimension 1 Code;
+                                                              HRV=Êifra globalne dimenzije 1];
+                                                   CaptionClass='1,1,1' }
+    { 37  ;   ;Global Dimension 2 Code;Code20     ;TableRelation="Dimension Value".Code WHERE ("Global Dimension No."=CONST(2));
+                                                   CaptionML=[ENU=Global Dimension 2 Code;
+                                                              HRV=Êifra globalne dimenzije 2];
+                                                   CaptionClass='1,1,2' }
+    { 38  ;   ;Br. serija poslov. partnera;Code10 ;TableRelation="No. Series";
+                                                   CaptionML=HRV=Br. serija poslov. partnera }
+    { 39  ;   ;Address             ;Text30        ;CaptionML=[ENU=Address;
+                                                              HRV=Adresa] }
+  }
+  KEYS
+  {
+    {    ;"Redni broj unosa"                      ;Clustered=true }
+  }
+  FIELDGROUPS
+  {
+  }
+  CODE
+  {
+    VAR
+      recUgoSet@1000000004 : Record "Ugovori Setup";
+      recPosPar@1000000000 : Record "Poslovni partner UOD";
+      "rec¶irRaüPosPar"@1000000002 : Record "¶iro raüun poslovnog partnera";
+      recUgo@1000000003 : Record "Ugovori UOD";
+      recVrsUgo@1230280000 : Record "Vrste UGOD";
+      Modul11@1000000001 : Integer;
+      msg001@1000000005 : TextConst 'HRV=NeodgovarajuÜi broj znamenaka: %1!';
+      msg002@1000000006 : TextConst 'HRV=NeodgovarajuÜi kontrolni broj!';
+      DimMgt@1000000007 : Codeunit DimensionManagement;
+
+    PROCEDURE ValidateShortcutDimCode@29(FieldNumber@1000 : Integer;VAR ShortcutDimCode@1001 : Code[20]);
+    BEGIN
+    END;
+
+    BEGIN
+    END.
+  }
+}
+

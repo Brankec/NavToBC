@@ -1,0 +1,156 @@
+OBJECT Table 38024257 Redak inozemstva
+{
+  OBJECT-PROPERTIES
+  {
+    Date=20200429D;
+    Time=001742.563T;
+    Modified=true;
+    Version List=DIGUD00;
+  }
+  PROPERTIES
+  {
+    OnInsert=BEGIN
+               if "Faza rada" = "Faza rada"::"ZakljuŸivanje" then
+                 ERROR(msg001);
+             END;
+
+    OnModify=BEGIN
+               if "Faza rada" =  "Faza rada"::"ZakljuŸivanje" then
+                 ERROR(msg001);
+             END;
+
+    OnDelete=BEGIN
+               if "Faza rada" =  "Faza rada"::"ZakljuŸivanje" then
+                 ERROR(msg001);
+             END;
+
+    OnRename=BEGIN
+               if "Faza rada" =  "Faza rada"::"ZakljuŸivanje" then
+                 ERROR(msg001);
+             END;
+
+    LookupPageID=Page60111;
+    DrillDownPageID=Page60111;
+  }
+  FIELDS
+  {
+    { 1   ;   ;Broj Isplate        ;Code20         }
+    { 2   ;   ;Datum isplate       ;Date           }
+    { 3   ;   ;Godina za koju se vrçi obrada;Text4 }
+    { 4   ;   ;Mjesec za koji se vrçi obrada;Integer }
+    { 5   ;   ;Identifikator R-S obrasca;Code20    }
+    { 6   ;   ;Vrsta uplate R-S    ;Code20         }
+    { 7   ;   ;Vrsta obveznika R-S ;Code20         }
+    { 8   ;   ;Broj Ugovora        ;Code20        ;TableRelation="Ugovori UOD".Broj;
+                                                   OnValidate=BEGIN
+                                                                if "Broj Ugovora" <> xRec."Broj Ugovora" then begin
+                                                                  if RecUgovori.GET("Broj Ugovora") then begin
+                                                                    "Izvrçitelj Broj"  := RecUgovori."Izvrçitelj Broj";
+                                                                  end else begin
+                                                                    "Izvrçitelj Broj"  := '';
+                                                                    "Employee ID"      := '';
+                                                                    Ime                := '';
+                                                                    Prezime            := '';
+                                                                    "æifra op†ine"     := '';
+                                                                  end;
+                                                                  if "Izvrçitelj Broj" <> '' then
+                                                                    if Employee.GET("Izvrçitelj Broj") then begin
+                                                                      "Employee ID"      := Employee."Employee ID";
+                                                                      Ime                := Employee."First Name";
+                                                                      Prezime            := Employee."Last Name";
+                                                                      "æifra op†ine"     := Employee."æifra op†ine";
+                                                                    end;
+                                                                end;
+                                                              END;
+                                                               }
+    { 9   ;   ;Izvrçitelj Broj     ;Code20        ;OnValidate=BEGIN
+                                                                if "Izvrçitelj Broj" <> xRec."Izvrçitelj Broj" then begin
+                                                                  if Employee.GET("Izvrçitelj Broj") then begin
+                                                                    "Employee ID"      := Employee."Employee ID";
+                                                                    Ime                := Employee."First Name";
+                                                                    Prezime            := Employee."Last Name";
+                                                                    "æifra op†ine"     := Employee."æifra op†ine";
+                                                                  end else begin
+                                                                    "Employee ID"      := '';
+                                                                    Ime                := '';
+                                                                    Prezime            := '';
+                                                                    "æifra op†ine"     := '';
+                                                                  end;
+                                                                end;
+                                                              END;
+                                                               }
+    { 10  ;   ;Employee ID         ;Code13        ;CaptionML=ENU=Employee ID }
+    { 11  ;   ;Ime                 ;Text30         }
+    { 12  ;   ;Prezime             ;Text30         }
+    { 13  ;   ;æifra op†ine        ;Code20        ;TableRelation=Table60020 }
+    { 14  ;   ;Osnovica            ;Decimal        }
+    { 15  ;   ;Postotak doprinosa  ;Decimal        }
+    { 16  ;   ;Dnevna osnovica     ;Decimal        }
+    { 17  ;   ;Dnevna obveza       ;Decimal        }
+    { 18  ;   ;Od dana             ;Integer        }
+    { 19  ;   ;Do dana             ;Integer        }
+    { 20  ;   ;Broj dana na putu   ;Decimal        }
+    { 21  ;   ;Iznos doprinosa     ;Decimal        }
+    { 22  ;   ;Iznos osnovice za doprinos;Decimal  }
+    { 23  ;   ;Djelatnik broj      ;Code20        ;TableRelation=Employee;
+                                                   OnValidate=BEGIN
+                                                                if "Djelatnik broj" <> xRec."Djelatnik broj" then begin
+                                                                  if recDjelatnik.GET("Djelatnik broj") then begin
+                                                                    "Employee ID"  := recDjelatnik."Employee ID1";
+                                                                    Ime            := recDjelatnik."First Name";
+                                                                    Prezime        := recDjelatnik."Last Name";
+                                                                //    "æifra op†ine" := recdjelatnik."æifra op†ine"; //???????????????
+                                                                  end else begin
+                                                                    "Employee ID"  := '';
+                                                                    Ime            := '';
+                                                                    Prezime        := '';
+                                                                    "æifra op†ine" := '';
+                                                                  end;
+                                                                end;
+                                                              END;
+                                                               }
+    { 88  ;   ;Faza rada           ;Option        ;OptionString=Obrada,"ZakljuŸivanje";
+                                                   Description=Obrada,ZakljuŸivanje }
+    { 60100;  ;Redak               ;Integer       ;AutoIncrement=false }
+  }
+  KEYS
+  {
+    {    ;"Broj Isplate",Redak                    ;Clustered=true }
+    {    ;"Employee ID","Godina za koju se vrçi obrada" }
+    {    ;"Identifikator R-S obrasca","Izvrçitelj Broj" }
+  }
+  FIELDGROUPS
+  {
+  }
+  CODE
+  {
+    VAR
+      HumanResSetup@1230280016 : Record "Human Resources Setup";
+      Employee@1230280015 : Record "Poslovni partner UOD";
+      Res@1230280014 : Record Resource;
+      PostCode@1230280013 : Record "Post Code";
+      AlternativeAddr@1230280012 : Record "Alternative Address";
+      EmployeeQualification@1230280011 : Record "Employee Qualification";
+      Relative@1230280010 : Record "Employee Relative";
+      EmployeeAbsence@1230280009 : Record "Employee Absence";
+      MiscArticleInformation@1230280008 : Record "Misc. Article Information";
+      ConfidentialInformation@1230280007 : Record "Confidential Information";
+      HumanResComment@1230280006 : Record "Human Resource Comment Line";
+      SalespersonPurchaser@1230280005 : Record "Salesperson/Purchaser";
+      NoSeriesMgt@1230280004 : Codeunit NoSeriesManagement;
+      EmployeeResUpdate@1230280003 : Codeunit "Employee/Resource Update";
+      EmployeeSalespersonUpdate@1230280002 : Codeunit "Employee/Salesperson Update";
+      DimMgt@1230280001 : Codeunit DimensionManagement;
+      Modul11@1230280000 : Integer;
+      Text000@1230280017 : TextConst;
+      Text001@1230280018 : TextConst;
+      Text002@1230280019 : TextConst;
+      RecUgovori@1230280020 : Record "Ugovori UOD";
+      recDjelatnik@1230280022 : Record Employee;
+      msg001@1000000000 : TextConst 'HRV=Nisu mogu†e promjene u zakljuŸenoj isplati!';
+
+    BEGIN
+    END.
+  }
+}
+

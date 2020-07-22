@@ -1,0 +1,64 @@
+OBJECT Table 38024253 Ugovori Setup
+{
+  OBJECT-PROPERTIES
+  {
+    Date=20200424D;
+    Time=154030.523T;
+    Modified=true;
+    Version List=DIGUD00;
+  }
+  PROPERTIES
+  {
+    CaptionML=[ENU=Contracts Setup;
+               HRV=Postava ugovora od jelu];
+    LookupPageID="Contract Setup";
+    DrillDownPageID="Contract Setup";
+  }
+  FIELDS
+  {
+    { 1   ;   ;Primary Key         ;Code20        ;CaptionML=[ENU=Primary Key;
+                                                              HRV=Primarni kljuŸ] }
+    { 2   ;   ;Broj. serija ugovora;Code20        ;TableRelation="No. Series";
+                                                   CaptionML=HRV=Broj. serija ugovora }
+    { 3   ;   ;Broj. serija isplata;Code20        ;TableRelation="No. Series";
+                                                   CaptionML=HRV=Broj. serija isplata }
+    { 4   ;   ;RS Osoba za kontakt ;Text50        ;CaptionML=HRV=RS Osoba za kontakt }
+    { 5   ;   ;RS Telefon za kontakt;Text10       ;CaptionML=HRV=RS Telefon za kontakt }
+    { 6   ;   ;RS E-mail adresa    ;Text30        ;CaptionML=HRV=RS E-mail adresa }
+    { 7   ;   ;RS Vrsta obveznika  ;Code10        ;CaptionML=HRV=RS Vrsta obveznika }
+    { 8   ;   ;RS Vrsta uplate     ;Code10        ;CaptionML=HRV=RS Vrsta uplate }
+    { 9   ;   ;RS Disketa          ;Option        ;CaptionML=HRV=RS Disketa;
+                                                   OptionString="Direktna izrada","Izlaz prema Regosu";
+                                                   Description=Direktna izrada,Izlaz prema Regosu }
+    { 10  ;   ;RS pozicija diskete ;Text50        ;CaptionML=HRV=RS pozicija diskete }
+    { 11  ;   ;Obveznik PDV-a      ;Option        ;CaptionML=HRV=Obveznik PDV-a;
+                                                   OptionString=Da,Ne;
+                                                   Description=Da,Ne }
+    { 12  ;   ;Postotak PDV-a      ;Decimal       ;CaptionML=HRV=Postotak PDV-a }
+    { 13  ;   ;Broj. serija posl. partnera;Code20 ;TableRelation="No. Series";
+                                                   CaptionML=HRV=Broj. serija posl. partnera }
+    { 15  ;   ;Broj. serija upu†ivanja u ino.;Code20;
+                                                   TableRelation="No. Series";
+                                                   CaptionML=HRV=Broj. serija upu†ivanja u ino. }
+    { 50000;  ;ProsjeŸna osnovica  ;Decimal       ;Description=Dorada po zahtjevu }
+    { 60001;  ;Temeljnica          ;Code10        ;TableRelation="Gen. Journal Template";
+                                                   CaptionML=HRV=Temeljnica }
+    { 60005;  ;Paket temeljnice    ;Code10        ;TableRelation="Gen. Journal Batch".Name WHERE ("Journal Template Name"=FIELD(Temeljnica));
+                                                   CaptionML=HRV=Paket temeljnice }
+    { 60100;  ;Putanja za temeljnicu;Text50       ;CaptionML=HRV=Putanja za temeljnicu }
+  }
+  KEYS
+  {
+    {    ;"Primary Key"                           ;Clustered=true }
+  }
+  FIELDGROUPS
+  {
+  }
+  CODE
+  {
+
+    BEGIN
+    END.
+  }
+}
+

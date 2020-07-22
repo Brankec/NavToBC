@@ -1,0 +1,239 @@
+OBJECT Table 38024262 Ugovori UOD
+{
+  OBJECT-PROPERTIES
+  {
+    Date=20200507D;
+    Time=105725.627T;
+    Modified=true;
+    Version List=DIGUD00.DIAH,JOPPD;
+  }
+  PROPERTIES
+  {
+    OnInsert=BEGIN
+               if Broj = '' then begin
+               //---> 051028 - mmatko
+               {  UgovoriSetup.GET;
+                 UgovoriSetup.TESTFIELD("Broj. serija ugovora");
+                 NoSeriesMgt.InitSeries(UgovoriSetup."Broj. serija ugovora",xRec."No. Series",0D,Broj,"No. Series");}
+                 VrsteUgovora.RESET;
+                 VrsteUgovora.GET("Vrsta ugovora");
+                 VrsteUgovora.TESTFIELD("Broj. serija");
+                 NoSeriesMgt.InitSeries(VrsteUgovora."Broj. serija",xRec."No. Series",0D,Broj,"No. Series");
+               //<--- 051028 - mmatko
+               end;
+             END;
+
+    LookupPageID="Contract list";
+    DrillDownPageID="Service contract card";
+  }
+  FIELDS
+  {
+    { 1   ;   ;Broj                ;Code20        ;CaptionML=HRV=Broj }
+    { 2   ;   ;Vrsta ugovora       ;Code20        ;TableRelation="Vrste UGOD".Broj;
+                                                   OnValidate=BEGIN
+                                                                if "Vrsta ugovora" <> xRec."Vrsta ugovora" then begin
+                                                                  if VrsteUgovora.GET("Vrsta ugovora") then begin
+                                                                    "Vrsta ugovora za obradu" := VrsteUgovora.Vrsta;
+                                                                    "Osnova obraüuna OO"      := VrsteUgovora."Osnova osiguranja";
+                                                                    recInvalidnost.RESET;
+                                                                    recInvalidnost.SETRANGE("Poüetno zadano", true);
+                                                                    if recInvalidnost.FIND('-') then
+                                                                      "Osnova obraüuna I"     := recInvalidnost.Êifra
+                                                                    else
+                                                                      "Osnova obraüuna I"     := '';
+
+                                                                    recUvecStaz.RESET;
+                                                                    recUvecStaz.SETRANGE("Poüetno zadano", true);
+                                                                    if recUvecStaz.FIND('-') then
+                                                                      "Osnova obraüuna B"     := recUvecStaz.Êifra
+                                                                    else
+                                                                      "Osnova obraüuna B"     := '';
+
+                                                                    recZdrav.RESET;
+                                                                    recZdrav.SETRANGE("Poüetno zadano", true);
+                                                                    if recZdrav.FIND('-') then
+                                                                      "Osnova obraüuna Z"     := recZdrav.Êifra
+                                                                    else
+                                                                      "Osnova obraüuna Z"     := '';
+
+                                                                    "Osnova obraüuna SSRR"  := '';
+                                                                  end else begin
+                                                                    "Vrsta ugovora za obradu" := 0;
+                                                                    "Osnova obraüuna OO"      := '';
+                                                                    "Osnova obraüuna I"       := '';
+                                                                    "Osnova obraüuna B"       := '';
+                                                                    "Osnova obraüuna Z"       := '';
+                                                                    "Osnova obraüuna SSRR"    := '';
+                                                                  end;
+                                                                end;
+                                                              END;
+
+                                                   CaptionML=HRV=Vrsta ugovora }
+    { 3   ;   ;IzvrÁitelj Broj     ;Code20        ;TableRelation="Poslovni partner UOD"."No.";
+                                                   OnValidate=BEGIN
+                                                                if "IzvrÁitelj Broj" <> xRec."IzvrÁitelj Broj" then begin
+                                                                  if PoslovniPartner.GET("IzvrÁitelj Broj") then begin
+                                                                    "IzvrÁitelj puno Ime" := PoslovniPartner."Last Name" + ' ' + PoslovniPartner."First Name";
+                                                                    "Global Dimension 1 Code" := PoslovniPartner."Global Dimension 1 Code";
+                                                                    "Global Dimension 2 Code" := PoslovniPartner."Global Dimension 2 Code";
+                                                                  end else begin
+                                                                    "IzvrÁitelj puno Ime" := '';
+                                                                    "Global Dimension 1 Code" := '';
+                                                                    "Global Dimension 2 Code" := '';
+                                                                  end;
+                                                                end;
+
+                                                                RecZiroRacuni.RESET;
+                                                                RecZiroRacuni.SETRANGE("Êifra djelatnika", "IzvrÁitelj Broj");
+                                                                RecZiroRacuni.SETRANGE("Glavni raüun", true);
+                                                                if RecZiroRacuni.FIND('-') then
+                                                                  VALIDATE("Raüun isplate", RecZiroRacuni.Raüun)
+                                                                else begin
+                                                                  RecZiroRacuni.RESET;
+                                                                  RecZiroRacuni.SETRANGE("Êifra djelatnika", "IzvrÁitelj Broj");
+                                                                  if RecZiroRacuni.FIND('-') then
+                                                                    VALIDATE("Raüun isplate", RecZiroRacuni.Raüun)
+                                                                  else
+                                                                    ERROR(msg001, "IzvrÁitelj puno Ime");
+                                                                end;
+                                                              END;
+
+                                                   CaptionML=HRV=IzvrÁitelj Broj }
+    { 4   ;   ;IzvrÁitelj puno Ime ;Text50        ;CaptionML=HRV=IzvrÁitelj puno Ime }
+    { 5   ;   ;Radno mjesto        ;Text50        ;CaptionML=HRV=Radno mjesto }
+    { 6   ;   ;Opis Posla          ;Text250       ;CaptionML=HRV=Opis Posla }
+    { 7   ;   ;Datum ugovora       ;Date          ;CaptionML=HRV=Datum ugovora }
+    { 8   ;   ;Datum roka izvrÁenja;Date          ;CaptionML=HRV=Datum roka izvrÁenja }
+    { 9   ;   ;Vrijeme izvrÁenja   ;Text100       ;CaptionML=HRV=Vrijeme izvrÁenja }
+    { 10  ;   ;Dodatne opaske      ;Text250       ;CaptionML=HRV=Dodatne opaske }
+    { 11  ;   ;Raüun isplate       ;Text50        ;OnValidate=BEGIN
+                                                                if "Raüun isplate" <> xRec."Raüun isplate" then begin
+                                                                  RecZiroRacuni.RESET;
+                                                                  RecZiroRacuni.SETFILTER("Êifra djelatnika","IzvrÁitelj Broj");
+                                                                  RecZiroRacuni.SETFILTER(Raüun,"Raüun isplate");
+                                                                  if RecZiroRacuni.FIND('+') then
+                                                                    "Banka raüuna isplate" := RecZiroRacuni."Êifra banke"
+                                                                  else
+                                                                    "Banka raüuna isplate" := '';
+                                                                end;
+                                                              END;
+
+                                                   CaptionML=HRV=Raüun isplate }
+    { 12  ;   ;Bruto/Neto          ;Option        ;CaptionML=HRV=Bruto/Neto;
+                                                   OptionString=Bruto,Neto }
+    { 13  ;   ;Iznos ugovora       ;Decimal       ;CaptionML=HRV=Iznos ugovora }
+    { 14  ;   ;Iznos isplate       ;Decimal       ;CaptionML=HRV=Iznos isplate }
+    { 15  ;   ;Iznos Obrade        ;Decimal       ;CaptionML=HRV=Iznos obrade }
+    { 16  ;   ;Valuta ugovora      ;Code20        ;TableRelation=Currency;
+                                                   OnValidate=BEGIN
+                                                                if "Valuta ugovora" = '' then begin
+                                                                  "Êifra banke za teüaj" := '';
+                                                                  "Êifra teüaja"         := 0;
+                                                                  "Êifra datuma teüaja"  := '';
+                                                                end;
+                                                              END;
+
+                                                   CaptionML=[ENU=Currency Code;
+                                                              HRV=Valuta ugovora] }
+    { 18  ;   ;Banka raüuna isplate;Text50        ;CaptionML=HRV=Banka raüuna isplate }
+    { 19  ;   ;Zakljuüen           ;Boolean       ;CaptionML=[ENU=Closed;
+                                                              HRV=Zakljuüen] }
+    { 20  ;   ;Vrsta ugovora za obradu;Option     ;CaptionML=HRV=Vrsta ugovora za obradu;
+                                                   OptionString="Ugovori o djelu","Isplate ülanovima nadzornih odbora","Autorski honorari",Stipendije,"Naknade ülanovima uprave";
+                                                   Description=Ugovori o djelu,Isplate ülanovima nadzornih odbora,Autorski honorari,Stipendije,Naknade ülanovima uprave }
+    { 21  ;   ;No. Series          ;Code10        ;TableRelation="No. Series";
+                                                   CaptionML=[ENU=No. Series;
+                                                              HRV=Brojüana serija];
+                                                   Editable=false }
+    { 22  ;   ;Osnova obraüuna OO  ;Code20        ;TableRelation="Osnovica osiguranja" }
+    { 23  ;   ;Osnova obraüuna I   ;Code20        ;TableRelation=Invaliditet;
+                                                   CaptionML=HRV=Invalidnost }
+    { 24  ;   ;Osnova obraüuna B   ;Code20        ;TableRelation="UveÜani staß"."Êifra";
+                                                   CaptionML=HRV=UveÜani staß }
+    { 25  ;   ;Osnova obraüuna Z   ;Code20        ;TableRelation="Zdrav. osiguranje";
+                                                   CaptionML=HRV=Zdravstveno osiguranje }
+    { 26  ;   ;Osnova obraüuna SSRR;Text4         ;CaptionML=HRV=Osnova obraüuna SSRR }
+    { 44  ;   ;Global Dimension 1 Code;Code20     ;TableRelation="Dimension Value".Code WHERE ("Global Dimension No."=CONST(1));
+                                                   OnValidate=BEGIN
+                                                                ValidateShortcutDimCode(1,"Global Dimension 1 Code");
+                                                                MODIFY;
+                                                              END;
+
+                                                   CaptionML=[ENU=Global Dimension 1 Code;
+                                                              HRV=Êifra globalne dimenzije 1];
+                                                   CaptionClass='1,1,1' }
+    { 45  ;   ;Global Dimension 2 Code;Code20     ;TableRelation="Dimension Value".Code WHERE ("Global Dimension No."=CONST(2));
+                                                   OnValidate=BEGIN
+                                                                ValidateShortcutDimCode(2,"Global Dimension 2 Code");
+                                                                MODIFY;
+                                                              END;
+
+                                                   CaptionML=[ENU=Global Dimension 2 Code;
+                                                              HRV=Êifra globalne dimenzije 2];
+                                                   CaptionClass='1,1,2' }
+    { 50  ;   ;Êifra banke za teüaj;Code20        ;TableRelation=Banka;
+                                                   CaptionML=HRV=Êifra banke za teüaj }
+    { 51  ;   ;Êifra teüaja        ;Option        ;CaptionML=HRV=Êifra teüaja;
+                                                   OptionString=" ","Kupovni za efektivu","Kupovni za devize",Srednji,"Prodajni za devize","Prodajni za efektivu" }
+    { 52  ;   ;Êifra datuma teüaja ;Code20        ;TableRelation="Datum teüaja";
+                                                   CaptionML=HRV=Êifra datuma teüaja }
+    { 53  ;   ;Oznaka primici obv. doprinosa;Code20;
+                                                   TableRelation="Oznaka obveze doprinosa";
+                                                   Description=JOPPD }
+  }
+  KEYS
+  {
+    {    ;Broj                                    ;Clustered=true }
+    {    ;"IzvrÁitelj Broj"                        }
+  }
+  FIELDGROUPS
+  {
+  }
+  CODE
+  {
+    VAR
+      PoslovniPartner@1230280000 : Record "Poslovni partner UOD";
+      MgtBrSerije@1230280002 : Codeunit NoSeriesManagement;
+      VrsteUgovora@1230280003 : Record "Vrste UGOD";
+      RecZiroRacuni@1230280004 : Record "¶iro raüun poslovnog partnera";
+      UgovoriSetup@1000000002 : Record "Ugovori Setup";
+      Ugovori@1000000001 : Record "Ugovori UOD";
+      NoSeriesMgt@1000000000 : Codeunit NoSeriesManagement;
+      msg001@1000000003 : TextConst 'HRV=Za djelatnika %1 nije definiran niti jedan ßiro raüun!';
+      recInvalidnost@1000000004 : Record Invaliditet;
+      recUvecStaz@1000000005 : Record "UveÜani staß";
+      recZdrav@1000000006 : Record "Zdrav. osiguranje";
+
+    PROCEDURE ValidateShortcutDimCode@29(FieldNumber@1000 : Integer;VAR ShortcutDimCode@1001 : Code[20]);
+    BEGIN
+      {DimMgt.ValidateDimValueCode(FieldNumber, ShortcutDimCode);
+      DimMgt.SaveDefaultDim(DATABASE::60101,"No.", FieldNumber, ShortcutDimCode);
+      MODIFY;
+      }
+    END;
+
+    PROCEDURE AssistEdit@2(OldUgovori@1000 : Record "Ugovori UOD") : Boolean;
+    BEGIN
+      with Ugovori do begin
+        Ugovori := Rec;
+        UgovoriSetup.GET;
+        UgovoriSetup.TESTFIELD("Broj. serija ugovora");
+        if NoSeriesMgt.SelectSeries(UgovoriSetup."Broj. serija ugovora",OldUgovori."No. Series","No. Series") then begin
+          UgovoriSetup.GET;
+          UgovoriSetup.TESTFIELD("Broj. serija ugovora");
+          NoSeriesMgt.SetSeries(Broj);
+          Rec := Ugovori;
+          exit(true);
+        end;
+      end;
+    END;
+
+    BEGIN
+    {
+      051028 - mmatko - Brojüana serija se povlaüi s vrste ugovora
+      051212 - mmatko - Dodao polja za rad s ugovorima u valuti
+    }
+    END.
+  }
+}
+

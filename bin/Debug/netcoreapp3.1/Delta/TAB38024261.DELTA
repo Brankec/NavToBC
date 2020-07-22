@@ -1,0 +1,70 @@
+OBJECT Table 38024261 Zaglavlje Knji§ene Isplate
+{
+  OBJECT-PROPERTIES
+  {
+    Date=20131223D;
+    Time=211632T;
+    Modified=true;
+    Version List=DIGUD00,JOPPD;
+  }
+  PROPERTIES
+  {
+    OnDelete=BEGIN
+               ERROR(msg001);
+             END;
+
+    LookupPageID=Page38017827;
+    DrillDownPageID=Page38017828;
+  }
+  FIELDS
+  {
+    { 1   ;   ;Broj                ;Code20        ;CaptionML=HRV=Broj }
+    { 2   ;   ;Vrsta ugovora za obradu;Option     ;CaptionML=HRV=Vrsta ugovora za obradu;
+                                                   OptionString="Ugovori o djelu","Isplate Ÿlanovima nadzornih odbora","Autorski honorari";
+                                                   Description=Ugovori o djelu,Isplate Ÿlanovima nadzornih odbora,Autorski honorari }
+    { 3   ;   ;Datum isplate       ;Date          ;OnValidate=BEGIN
+                                                                recRedakKnjIspl.RESET;
+                                                                recRedakKnjIspl.SETRANGE("Broj Isplate", Broj);
+                                                                if recRedakKnjIspl.FIND('-') then
+                                                                  recRedakKnjIspl.MODIFYALL("Datum isplate", "Datum isplate");
+                                                              END;
+
+                                                   CaptionML=HRV=Datum isplate }
+    { 4   ;   ;Godina za koju se vrçi obrada;Text4;CaptionML=HRV=Godina obrade }
+    { 5   ;   ;Mjesec za koji se vrçi obrada;Integer;
+                                                   CaptionML=HRV=Mjesec obrade }
+    { 6   ;   ;Identifikator R-S obrasca;Code20   ;TableRelation="JOPPD A str.";
+                                                   CaptionML=HRV=Identifikator R-S obrasca }
+    { 7   ;   ;Faza rada           ;Option        ;CaptionML=HRV=Faza rada;
+                                                   OptionString=Otvaranje,Generiranje,Kontrola,"ObraŸun","ZakljuŸivanje";
+                                                   Description=Otvaranje,Generiranje,Kontrola,ObraŸun,ZakljuŸivanje }
+    { 8   ;   ;Rekapitulacija      ;Boolean       ;CaptionML=HRV=Rekapitulacija }
+    { 9   ;   ;Rekapitulacija po org. jed.;Boolean;CaptionML=HRV=Rekapitulacija po org. jed. }
+    { 10  ;   ;R-S disketa         ;Boolean       ;CaptionML=HRV=R-S disketa }
+    { 11  ;   ;R-S hash            ;Boolean       ;CaptionML=HRV=R-S hash }
+    { 12  ;   ;R-S a stranica      ;Boolean       ;CaptionML=HRV=R-S a stranica }
+    { 13  ;   ;R-S b stranica      ;Boolean       ;CaptionML=HRV=R-S b stranica }
+    { 14  ;   ;ObraŸunski listi†i  ;Boolean       ;CaptionML=HRV=ObraŸunski listi†i }
+    { 15  ;   ;Zbrojni nalog, punjenje;Boolean    ;CaptionML=HRV=Zbrojni nalog, punjenje }
+    { 16  ;   ;Potvrda izvjeç†a    ;Boolean       ;CaptionML=HRV=Potvrda izvjeç†a }
+    { 31  ;   ;Identifikator JOPPD ;Code20        ;TableRelation="JOPPD A str.";
+                                                   Description=JOPPD }
+  }
+  KEYS
+  {
+    {    ;Broj                                    ;Clustered=true }
+  }
+  FIELDGROUPS
+  {
+  }
+  CODE
+  {
+    VAR
+      msg001@1000000000 : TextConst 'HRV=Ne mo§ete obrisati knji§enu isplatu!';
+      recRedakKnjIspl@1000000001 : Record "Redak Knji§ene Isplate";
+
+    BEGIN
+    END.
+  }
+}
+

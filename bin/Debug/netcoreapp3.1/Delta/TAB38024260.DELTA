@@ -1,0 +1,209 @@
+OBJECT Table 38024260 Redak Knji§ene Isplate
+{
+  OBJECT-PROPERTIES
+  {
+    Date=20200429D;
+    Time=002946.550T;
+    Modified=true;
+    Version List=DIGUD00,DIGPL08,DIGPL03,JOPPD;
+  }
+  PROPERTIES
+  {
+    OnDelete=BEGIN
+               ERROR(msg001);
+             END;
+
+  }
+  FIELDS
+  {
+    { 1   ;   ;Broj Isplate        ;Code20        ;CaptionML=HRV=Broj Isplate }
+    { 2   ;   ;Vrsta ugovora za obradu;Option     ;CaptionML=HRV=Vrsta ugovora za obradu;
+                                                   OptionString="Ugovori o djelu","Isplate Ÿlanovima nadzornih odbora","Autorski honorari",Stipendije;
+                                                   Description=Ugovori o djelu,Isplate Ÿlanovima nadzornih odbora,Autorski honorari,Stipendije }
+    { 3   ;   ;Datum isplate       ;Date          ;CaptionML=HRV=Datum isplate }
+    { 4   ;   ;Godina za koju se vrçi obrada;Text4;CaptionML=HRV=Godina obrade }
+    { 5   ;   ;Mjesec za koji se vrçi obrada;Integer;
+                                                   CaptionML=HRV=Mjesec obrade }
+    { 6   ;   ;Identifikator R-S obrasca;Code20   ;TableRelation="R-S obrazac A strana"."Identifikator obrasca";
+                                                   CaptionML=HRV=Identifikator R-S obrasca }
+    { 7   ;   ;Faza rada           ;Option        ;CaptionML=HRV=Faza rada;
+                                                   OptionString=Otvaranje,Generiranje,Kontrola,"ObraŸun","ZakljuŸivanje";
+                                                   Description=Otvaranje,Generiranje,Kontrola,ObraŸun,ZakljuŸivanje }
+    { 8   ;   ;Broj Ugovora        ;Code20        ;CaptionML=HRV=Broj Ugovora }
+    { 9   ;   ;Vrsta ugovora       ;Code20        ;TableRelation="Vrste UGOD".Broj;
+                                                   CaptionML=HRV=Vrsta ugovora }
+    { 10  ;   ;Izvrçitelj Broj     ;Code20        ;CaptionML=HRV=Izvrçitelj Broj }
+    { 11  ;   ;Izvrçitelj puno Ime ;Text50        ;CaptionML=HRV=Izvrçitelj puno Ime }
+    { 12  ;   ;Radno mjesto        ;Text50        ;CaptionML=HRV=Radno mjesto }
+    { 13  ;   ;Opis Posla          ;Text250       ;CaptionML=HRV=Opis Posla }
+    { 14  ;   ;Datum ugovora       ;Date          ;CaptionML=HRV=Datum ugovora }
+    { 15  ;   ;Datum roka izvrçenja;Date          ;CaptionML=HRV=Datum roka izvrçenja }
+    { 16  ;   ;Vrijeme izvrçenja   ;Text100       ;CaptionML=HRV=Vrijeme izvrçenja }
+    { 17  ;   ;Dodatni komentar    ;Text250       ;CaptionML=HRV=Dodatni komentar }
+    { 18  ;   ;RaŸun isplate       ;Text50        ;CaptionML=HRV=RaŸun isplate }
+    { 19  ;   ;Bruto/Neto          ;Option        ;CaptionML=HRV=Bruto/Neto;
+                                                   OptionString=Bruto,Neto }
+    { 20  ;   ;Iznos ugovora (LVT) ;Decimal       ;CaptionML=HRV=Iznos ugovora (LVT) }
+    { 21  ;   ;Iznos isplate (LVT) ;Decimal       ;CaptionML=HRV=Iznos isplate (LVT) }
+    { 22  ;   ;Iznos Obrade (LVT)  ;Decimal       ;CaptionML=HRV=Iznos Obrade (LVT) }
+    { 25  ;   ;Banka raŸuna isplate;Text50        ;CaptionML=HRV=Banka raŸuna isplate }
+    { 26  ;   ;Postotak priznatog izdatka;Decimal ;CaptionML=HRV=Postotak priznatog izdatka }
+    { 27  ;   ;Postotak doprinosa MO I stup;Decimal;
+                                                   CaptionML=HRV=Postotak doprinosa MO I stup }
+    { 28  ;   ;Postotak doprinosa MO II stup;Decimal;
+                                                   CaptionML=HRV=Postotak doprinosa MO II stup }
+    { 29  ;   ;Postotak doprinosa ZO;Decimal      ;CaptionML=HRV=Postotak doprinosa ZO }
+    { 30  ;   ;Postotak poreza     ;Decimal       ;CaptionML=HRV=Postotak poreza }
+    { 32  ;   ;Iznos priznatog izdatka;Decimal    ;CaptionML=HRV=Iznos priznatog izdatka }
+    { 33  ;   ;Iznos doprinosa MO I stup;Decimal  ;CaptionML=HRV=Iznos doprinosa MO I stup }
+    { 34  ;   ;Iznos doprinosa MO II stup;Decimal ;CaptionML=HRV=Iznos doprinosa MO II stup }
+    { 35  ;   ;Iznos doprinosa ZO  ;Decimal       ;CaptionML=HRV=Iznos doprinosa ZO }
+    { 36  ;   ;Iznos poreza        ;Decimal       ;CaptionML=HRV=Iznos poreza }
+    { 37  ;   ;Search Name         ;Code30        ;CaptionML=[ENU=Search Name;
+                                                              HRV=Ime za tra§enje] }
+    { 38  ;   ;Address             ;Text30        ;CaptionML=[ENU=Address;
+                                                              HRV=adresa] }
+    { 39  ;   ;Address 2           ;Text30        ;CaptionML=[ENU=Address 2;
+                                                              HRV=Adresa 2] }
+    { 40  ;   ;City                ;Text30        ;CaptionML=[ENU=City;
+                                                              HRV=Grad] }
+    { 41  ;   ;Post Code           ;Code20        ;TableRelation="Post Code";
+                                                   ValidateTableRelation=false;
+                                                   TestTableRelation=false;
+                                                   CaptionML=[ENU=Post Code;
+                                                              HRV=Poçtanski broj] }
+    { 42  ;   ;County              ;Text30        ;CaptionML=[ENU=County;
+                                                              HRV=Dr§ava] }
+    { 43  ;   ;Country Code        ;Code10        ;TableRelation="Country/Region";
+                                                   CaptionML=[ENU=Country Code;
+                                                              HRV=æifra dr§ave] }
+    { 44  ;   ;Global Dimension 1 Code;Code20     ;TableRelation="Dimension Value".Code WHERE ("Global Dimension No."=CONST(1));
+                                                   CaptionML=[ENU=Global Dimension 1 Code;
+                                                              HRV=æifra globalne dimenzije 1];
+                                                   CaptionClass='1,1,1' }
+    { 45  ;   ;Global Dimension 2 Code;Code20     ;TableRelation="Dimension Value".Code WHERE ("Global Dimension No."=CONST(2));
+                                                   CaptionML=[ENU=Global Dimension 2 Code;
+                                                              HRV=æifra globalne dimenzije 2];
+                                                   CaptionClass='1,1,2' }
+    { 47  ;   ;Global Dimension 1 Filter;Code20   ;FieldClass=FlowFilter;
+                                                   TableRelation="Dimension Value".Code WHERE ("Global Dimension No."=CONST(1));
+                                                   CaptionML=[ENU=Global Dimension 1 Filter;
+                                                              HRV=Filter globalne dimenzije 1];
+                                                   CaptionClass='1,3,1' }
+    { 48  ;   ;Global Dimension 2 Filter;Code20   ;FieldClass=FlowFilter;
+                                                   TableRelation="Dimension Value".Code WHERE ("Global Dimension No."=CONST(2));
+                                                   CaptionML=[ENU=Global Dimension 2 Filter;
+                                                              HRV=Filter globalne dimenzije 1];
+                                                   CaptionClass='1,3,2' }
+    { 49  ;   ;OIB                 ;Code13        ;CaptionML=[ENU=Employee ID;
+                                                              HRV=OIB] }
+    { 50  ;   ;Sudionik II stupa MO;Boolean       ;CaptionML=HRV=Sudionik II stupa MO }
+    { 51  ;   ;Primitak            ;Decimal       ;CaptionML=HRV=Primitak }
+    { 52  ;   ;Osnovica za doprinose;Decimal      ;CaptionML=HRV=Osnovica za doprinose }
+    { 53  ;   ;Postotak Prireza    ;Decimal       ;CaptionML=HRV=Postotak Prireza }
+    { 54  ;   ;Iznos prireza       ;Decimal       ;CaptionML=HRV=Iznos prireza }
+    { 55  ;   ;Ukupno porez i prirez;Decimal      ;CaptionML=HRV=Ukupno porez i prirez }
+    { 56  ;   ;Porezna osnovica    ;Decimal       ;CaptionML=HRV=Porezna osnovica }
+    { 57  ;   ;Neto svota          ;Decimal       ;CaptionML=HRV=Neto svota }
+    { 58  ;   ;æifra op†ine        ;Text4         ;TableRelation="Op†ina";
+                                                   CaptionML=HRV=æifra op†ine }
+    { 59  ;   ;BrojŸane ozn. za vrste dohotka;Text30;
+                                                   CaptionML=HRV=BrojŸane ozn. za vrste dohotka }
+    { 60  ;   ;Stranac             ;Boolean       ;CaptionML=HRV=Stranac }
+    { 61  ;   ;Ime                 ;Text50        ;CaptionML=HRV=Ime }
+    { 62  ;   ;Prezime             ;Text50        ;CaptionML=HRV=Prezime }
+    { 63  ;   ;Postotak izdatka od dohotka;Decimal;CaptionML=HRV=Postotak izdatka od dohotka }
+    { 64  ;   ;Iznos izdatka od dohotka;Decimal   ;CaptionML=HRV=Iznos izdatka od dohotka }
+    { 65  ;   ;Postotak PDV-a      ;Decimal       ;CaptionML=HRV=Postotak PDV-a }
+    { 66  ;   ;Iznos PDV-a         ;Decimal       ;CaptionML=HRV=Iznos PDV-a }
+    { 67  ;   ;æifra op†ine rada   ;Text4         ;TableRelation="Op†ina";
+                                                   CaptionML=HRV=æifra op†ine rada }
+    { 70  ;   ;Osnova obraŸuna OO  ;Code20        ;TableRelation="Op†ina";
+                                                   CaptionML=HRV=Osnov osiguranja }
+    { 71  ;   ;Osnova obraŸuna I   ;Code20        ;TableRelation=Invaliditet;
+                                                   CaptionML=HRV=Invalidnost }
+    { 72  ;   ;Osnova obraŸuna B   ;Code20        ;TableRelation="Uve†ani sta§"."æifra";
+                                                   CaptionML=HRV=Uve†ani sta§ }
+    { 73  ;   ;Osnova obraŸuna Z   ;Code20        ;TableRelation="Uve†ani sta§";
+                                                   CaptionML=HRV=Zdravstveno osiguranje }
+    { 74  ;   ;Osnova obraŸuna SSRR;Text4         ;CaptionML=HRV=Osnova obraŸuna SSRR }
+    { 80  ;   ;Iznos ugovora       ;Decimal       ;CaptionML=HRV=Iznos ugovora }
+    { 81  ;   ;Iznos isplate       ;Decimal       ;CaptionML=HRV=Iznos isplate }
+    { 82  ;   ;Iznos obrade        ;Decimal       ;CaptionML=HRV=Iznos obrade }
+    { 83  ;   ;Valuta ugovora      ;Code20        ;TableRelation=Currency;
+                                                   CaptionML=[ENU=Currency Code;
+                                                              HRV=Valuta ugovora] }
+    { 84  ;   ;Stipendija          ;Boolean       ;CaptionML=HRV=Stipendija;
+                                                   Description=060315 - mmatko }
+    { 85  ;   ;Neoporezivi iznos stipendije;Decimal;
+                                                   CaptionML=HRV=Neoporezivi iznos stipendije;
+                                                   Description=060315 - mmatko }
+    { 86  ;   ;Krizni porez        ;Decimal       ;Description=DIGPL03 }
+    { 87  ;   ;Netto sa KP         ;Decimal       ;Description=DIGPL03 }
+    { 88  ;   ;Identifikator JOPPD ;Code20        ;TableRelation="JOPPD A str.";
+                                                   Description=JOPPD }
+  }
+  KEYS
+  {
+    {    ;"Broj Isplate","Broj Ugovora"           ;Clustered=true }
+    {    ;"Izvrçitelj Broj","Datum isplate"        }
+    {    ;"Identifikator R-S obrasca",OIB          }
+    {    ;"Izvrçitelj Broj","æifra op†ine","BrojŸane ozn. za vrste dohotka","Datum isplate" }
+    {    ;"Global Dimension 1 Code","Broj Isplate",Prezime,Ime }
+    {    ;Prezime,Ime,"Izvrçitelj Broj","æifra op†ine","BrojŸane ozn. za vrste dohotka","Datum isplate" }
+    {    ;"Izvrçitelj Broj","æifra op†ine"         }
+    {    ;"Izvrçitelj Broj","æifra op†ine","BrojŸane ozn. za vrste dohotka" }
+    {    ;OIB,"æifra op†ine"                       }
+    {    ;"Izvrçitelj Broj","Datum isplate","Vrsta ugovora za obradu" }
+    {    ;"Izvrçitelj Broj"                        }
+    {    ;"Broj Isplate","Izvrçitelj puno Ime"     }
+  }
+  FIELDGROUPS
+  {
+  }
+  CODE
+  {
+    VAR
+      HumanResSetup@1230280016 : Record "Human Resources Setup";
+      Employee@1230280015 : Record Employee;
+      Res@1230280014 : Record Resource;
+      PostCode@1230280013 : Record "Post Code";
+      AlternativeAddr@1230280012 : Record "Alternative Address";
+      EmployeeQualification@1230280011 : Record "Employee Qualification";
+      Relative@1230280010 : Record "Employee Relative";
+      EmployeeAbsence@1230280009 : Record "Employee Absence";
+      MiscArticleInformation@1230280008 : Record "Misc. Article Information";
+      ConfidentialInformation@1230280007 : Record "Confidential Information";
+      HumanResComment@1230280006 : Record "Human Resource Comment Line";
+      SalespersonPurchaser@1230280005 : Record "Salesperson/Purchaser";
+      NoSeriesMgt@1230280004 : Codeunit NoSeriesManagement;
+      EmployeeResUpdate@1230280003 : Codeunit "Employee/Resource Update";
+      EmployeeSalespersonUpdate@1230280002 : Codeunit "Employee/Salesperson Update";
+      DimMgt@1230280001 : Codeunit DimensionManagement;
+      Modul11@1230280000 : Integer;
+      Text000@1000000001 : TextConst;
+      Text001@1230280018 : TextConst;
+      Text002@1230280019 : TextConst;
+      msg001@1000000000 : TextConst 'HRV=Ne mo§ete obrisati knji§enu isplatu!';
+
+    PROCEDURE AssistEdit@2(OldEmployee@1000 : Record Employee) : Boolean;
+    BEGIN
+    END;
+
+    PROCEDURE FullName@1() : Text[100];
+    BEGIN
+    END;
+
+    PROCEDURE ValidateShortcutDimCode@29(FieldNumber@1000 : Integer;VAR ShortcutDimCode@1001 : Code[20]);
+    BEGIN
+    END;
+
+    BEGIN
+    {
+      051230 - mmatko - Dodao kljuŸ "Broj Isplate", "Izvrçitelj puno Ime" za ispis analitiŸkih kartica po abecedi
+      060315 - mmatko - Dodao polja za stipendije
+    }
+    END.
+  }
+}
+

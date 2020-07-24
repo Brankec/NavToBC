@@ -115,6 +115,7 @@ namespace NavToBC
                         info.FileName = "cmd.exe";
                         info.RedirectStandardInput = true;
                         info.UseShellExecute = false;
+                        info.CreateNoWindow = true;
 
                         p.StartInfo = info;
                         p.Start();
@@ -123,7 +124,15 @@ namespace NavToBC
                         {
                             if (sw.BaseStream.CanWrite)
                             {
-                                sw.WriteLine(String.Format("cd {0}", finsqlLocationTextbox.Text));
+                                if (finsqlLocationTextbox.Text.Contains("N:"))
+                                {
+                                    sw.WriteLine(String.Format("pushd {0}", finsqlLocationTextbox.Text));
+                                }
+                                else
+                                {
+                                    sw.WriteLine(String.Format("cd {0}", finsqlLocationTextbox.Text));
+                                }
+
                                 sw.WriteLine(finalCommandTextbox.Text);
                             }
                         }
@@ -174,14 +183,15 @@ namespace NavToBC
 
         private void storeFilePathBttn_Click(object sender, EventArgs e)
         {
-            SaveFileDialog savefile = new SaveFileDialog();
-            savefile.FileName = "sample.txt";
-            savefile.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
-            savefile.InitialDirectory = Directory.GetCurrentDirectory();
+            OpenFileDialog choofdlog = new OpenFileDialog();
+            choofdlog.InitialDirectory = Directory.GetCurrentDirectory();
+            choofdlog.Filter = "All Text Files (*.txt*)|*.txt*";
+            choofdlog.FilterIndex = 1;
+            choofdlog.Multiselect = false;
 
-            if (savefile.ShowDialog() == DialogResult.OK)
+            if (choofdlog.ShowDialog() == DialogResult.OK)
             {
-                storeFilePathTextbox.Text = savefile.FileName;
+                storeFilePathTextbox.Text = choofdlog.FileName;
             }
 
             UpdateFinalCommandtextbox();

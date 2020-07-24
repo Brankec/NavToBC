@@ -148,6 +148,8 @@ namespace NavToBC
                     info.Verb = "runas";
                     info.RedirectStandardInput = true;
                     info.UseShellExecute = false;
+                    info.RedirectStandardError = true;
+                    info.CreateNoWindow = true;
 
                     p.StartInfo = info;
                     p.Start();
@@ -169,8 +171,18 @@ namespace NavToBC
                         }
                     }
 
-                    executeStatusLbl.Text = "Complete!";
-                    executeMessageTextbox.Text = "OK";
+                    StreamReader myStreamReader = p.StandardError;
+
+                    if (myStreamReader.ReadLine() != null)
+                    {
+                        executeStatusLbl.Text = "Error!";
+                        executeMessageTextbox.Text = myStreamReader.ReadLine();
+                    }
+                    else
+                    {
+                        executeStatusLbl.Text = "Complete!";
+                        executeMessageTextbox.Text = "OK";
+                    }
                 }
                 catch (Exception ex)
                 {

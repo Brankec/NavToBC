@@ -96,6 +96,7 @@ namespace NavToBC
                     info.Verb = "runas";
                     info.RedirectStandardInput = true;
                     info.UseShellExecute = false;
+                    info.CreateNoWindow = true;
 
                     p.StartInfo = info;
                     p.Start();
